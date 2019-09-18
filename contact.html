@@ -279,13 +279,55 @@
                                                 <!-- section-title -->
                                                 
                                                 
-                                                <!-- .contact-form -->
+                                                <!-- .contact-form - netlify-->
                                                 <div class="contact-form">
+                                                                                                
+                                                    <form action="POST" data-netlify="true" id="contact-form" class="validate-form" method="post">
+                                                    
+                                                        <!-- enter mail subject here -->
+                                                        <input type="hidden" name="subject" id="subject" value="send message">
+                                                        
+                                                        <p>
+                                                        <input placeholder="Name" type="text" name="name" id="name" class="required">
+                                                        </p>
+                                                        
+                                                        <p>
+                                                        <input placeholder="Email" type="text" name="email" id="email" class="required email">
+                                                        </p>
+                                                        
+                                                        <p class="field">
+                                                            <div data-netlify-recaptcha="true"></div>
+                                                        </p>
+                                                        
+                                                        <p>
+                                                        <textarea placeholder="Message" name="message" id="message" class="required"></textarea>
+                                                        </p>
+                                                        <p>
+                                                                <input type="file" placeholder="Upload File" name="myfile" id="myfile" class="required"></input>
+                                                                </p>
+                                                        
+                                                        <p>
+                                                        <button class="submit button primary">Send</button>
+                                                        </p>
+                                                    
+                                                    </form>
+
+                                                </div>
+                                                <!-- .contact-form -->
+
+
+
+
+
+
+
+                                                <!-- .contact-form -->
+                                                <!-- <div class="contact-form">
                                                 
                                                     <form id="contact-form" class="validate-form" method="post" action="send-mail.php">
                                                     
-                                                        <!-- enter mail subject here -->
-                                                        <input type="hidden" name="subject" id="subject" value="You have a new message from Ken Truong!">
+                                                        
+                                                        <input type="hidden" name="subject" id="subject" value="send message">
                                                         
                                                         <p>
                                                           <input placeholder="Name" type="text" name="name" id="name" class="required">
@@ -309,7 +351,7 @@
                                                     
                                                     </form>
                                                 
-                                                </div>
+                                                </div> -->
                                                 <!-- .contact-form -->
                                                 
                                                 
